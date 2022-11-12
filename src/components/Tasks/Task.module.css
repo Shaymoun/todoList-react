@@ -1,0 +1,35 @@
+.task {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    height: 3rem;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px black;
+}
+
+button {
+    margin: 10px;
+}
+
+.done {
+    background: rgb(20, 161, 20);
+    padding:10px 20px;
+    border:none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.delete {
+    background: rgb(255, 74, 42);
+    padding:10px 20px;
+    border:none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
