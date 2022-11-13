@@ -4,9 +4,9 @@ import TaskList from './components/Tasks/TasksList'
 import Card from './components/UI/Card'
 
 const DUMMY_DATA = [
-	{ title: 'zesrać się', isCompleted: false },
-	{ title: 'zjeść', isCompleted: false },
-	{ title: 'umyć się', isCompleted: false },
+	{ title: 'zesrać się', isCompleted: false, id:1 },
+	{ title: 'zjeść', isCompleted: false, id:2 },
+	{ title: 'umyć się', isCompleted: false, id:3 },
 ]
 const App = () => {
 	const [todos, setTodos] = useState(DUMMY_DATA)

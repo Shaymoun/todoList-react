@@ -1,13 +1,15 @@
 import React from 'react'
 import classes from './Task.module.css'
 
-const Task = (props) => {
+
+const Task = props => {
 	return (
 		<li className={classes.task}>
-			<p>{props.title}</p>
-			<div>
-				<button className={classes.done}>Done</button>
-				<button className={classes.delete}>Delete</button>
+			{props.title}
+			<div className={classes.tools}>
+				<button className={classes.done}><i class="fa-solid fa-check"></i></button>
+				<button className={classes.done}><i class="fa-solid fa-pen-to-square"></i></button>
+				<button className={classes.delete}><i class="fa-solid fa-xmark"></i></button>
 			</div>
 		</li>
 	)

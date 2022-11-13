@@ -1,4 +1,6 @@
 .list {
-    padding:50px;
+    display: flex;
+    flex-direction: column;
+    padding:30px 10px;
     background-color: #fff;
 }

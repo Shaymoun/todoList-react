@@ -8,7 +8,7 @@ const AddTask = (props) => {
 		setInput(e.target.value)
 	}
 	const addTodoHandler = () => {
-		const task = {title:input, isCompleted:false}
+		const task = {title:input, isCompleted:false, id:Math.random() * 1000}
 		props.onAddTask(task)
 		setInput('')
 	}
@@ -21,7 +21,7 @@ const AddTask = (props) => {
 				onChange={insertTodoHandler}
 				className={classes.headerInput}
 				placeholder='Add your task...'></input>
-			<button onClick={addTodoHandler}>Add</button>
+			<button className={classes.addBtn} onClick={addTodoHandler}>Add</button>
 		</div>
 	)
 }

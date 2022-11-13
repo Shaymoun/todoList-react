@@ -1,24 +1,42 @@
 .headerBody {
+	display: flex;
+	flex-direction: column;
 	border-radius: 5px 5px 0 0;
 	padding: 40px;
 	background-image: linear-gradient(340deg, #045de9 0%, #09c6f9 100%);
 }
 
 .headerInput {
-	width: 600px;
+	width: auto;
 	padding: 10px 20px;
-	margin-right: 20px;
+	margin: 10px 0;
 	border: none;
 	border-radius: 5px;
 	background-color: rgb(245, 245, 245);
 }
 
-button {
-	padding: 10px 22px;
+.addBtn {
+	padding: 10px 20px;
 	border: none;
 	border-radius: 5px;
 	background-color: rgb(245, 245, 245);
 	text-transform: uppercase;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+@media (min-width: 576px) {
+	.headerBody {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	h1 {
+		width: 100%;
+		padding: 0px 0px 20px;
+	}
+	.headerInput {
+		width: 80%;
+		margin:0;
+	}
 }

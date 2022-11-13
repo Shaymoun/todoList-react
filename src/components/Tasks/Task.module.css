@@ -1,35 +1,45 @@
 .task {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
-    height: 3rem;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 1px 2px 8px black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 5px;
+	margin: 5px 0;
+	height: 3rem;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(82, 82, 82, 0.5);
 }
 
-button {
-    margin: 10px;
+.tools button {
+	border: none;
+	background: none;
+	padding: 10px 10px;
+	margin-left: 5px;
 }
 
-.done {
-    background: rgb(20, 161, 20);
-    padding:10px 20px;
-    border:none;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
+.tools button i {
+	transition: color .3s;
 }
 
+.tools button:hover > i {
+	color: #045de9;
+}
 
-.delete {
-    background: rgb(255, 74, 42);
-    padding:10px 20px;
-    border:none;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
+.tools button i {
+	font-size: 1rem;
+}
+
+@media (min-width: 400px) {
+	.task {
+		padding: 0px 10px;
+		height: 3rem;
+	}
+
+	.tools button {
+		padding: 10px 13px;
+		margin-left: 5px;
+	}
+
+	.tools button i {
+		font-size: 1.1rem;
+	}
 }
