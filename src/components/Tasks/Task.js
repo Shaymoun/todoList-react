@@ -6,8 +6,9 @@ import classes from './Task.module.css'
 
 const Task = props => {
 	const deleteHandler = () => {
-		props.deleteTodo()
+		props.setTodos(props.todos.filter(el => el.id !== props.todo.id))
 	}
+	
 	return (
 		<li className={classes.task}>
 			{props.title}
