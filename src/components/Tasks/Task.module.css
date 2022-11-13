@@ -5,8 +5,7 @@
 	padding: 0px 5px;
 	margin: 5px 0;
 	height: 3rem;
-	border-radius: 5px;
-	box-shadow: 2px 2px 5px rgba(82, 82, 82, 0.5);
+	background: rgb(245, 245, 245);
 }
 
 .tools button {
@@ -17,7 +16,7 @@
 }
 
 .tools button i {
-	transition: color .3s;
+	transition: color 0.2s;
 }
 
 .tools button:hover > i {
